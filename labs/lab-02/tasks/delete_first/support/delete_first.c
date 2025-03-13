@@ -6,14 +6,19 @@
 
 #include "delete_first.h"
 
-char *delete_first(char *s, char *pattern)
+char *delete_first(char *string, char *pattern)
 {
 	/**
 	 * TODO: Implement this function
 	 */
 
-	(void) s;
-	(void) pattern;
+	char *s = strdup(string);
+	char *p = strstr(s, pattern);
 
-	return NULL;
+	if (p) {
+		char *aux = strdup(p + strlen(pattern));
+		strcpy(p, aux);
+	}
+
+	return s;
 }
