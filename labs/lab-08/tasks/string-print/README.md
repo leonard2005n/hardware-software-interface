@@ -15,4 +15,21 @@ Following the example of the `hello_world.asm` file, implement string display us
 
 If you're having difficulties solving this exercise, take a peek at [hello_world.asm](../../../guides/hello_world/).
 
+To test the implementation, enter the `tests/` directory and run:
+
+```console
+make check
+```
+
+In case of a correct solution, you will get an output such as:
+
+```text
+./run_all_tests.sh
+test_print_simple                ........................ passed ...  33
+test_print_special               ........................ passed ...  33
+test_print_long                  ........................ passed ...  34
+
+Total:                                                           100/100
+```
+
 If you're having trouble solving this exercise, go through [this](../../reading/functions.md) reading material.

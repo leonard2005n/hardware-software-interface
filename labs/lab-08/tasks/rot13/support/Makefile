@@ -7,8 +7,8 @@ ASFLAGS ?= -f elf32 -F dwarf -I "$(UTILSDIR)"
 CFLAGS ?= -Wall
 LDFLAGS ?= -m32 -no-pie
 
-TARGET := print_string
-OBJS := main.o print_string.o
+TARGET := rot13
+OBJS := main.o rot13.o
 
 all: $(TARGET)
 

@@ -1,14 +1,13 @@
 section .text
 
-extern puts
-global print_string
+global to_upper
 
-print_string:
+to_upper:
     push ebp
     mov ebp, esp
     push ebx                ; preserve ebx as required by cdecl
 
-    ; TODO: print the string
+    ; TODO
 
     pop ebx
     leave

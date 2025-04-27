@@ -1,14 +1,12 @@
 section .text
+global rot13
 
-extern puts
-global print_string
-
-print_string:
+rot13:
     push ebp
     mov ebp, esp
     push ebx                ; preserve ebx as required by cdecl
 
-    ; TODO: print the string
+    ; TODO
 
     pop ebx
     leave

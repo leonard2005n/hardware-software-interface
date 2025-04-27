@@ -70,4 +70,21 @@ Reverse the `mystring` string into a new string and display that new string.
 >
 > You cannot use another register because there is a high chance that even that register will be modified by the `printf` call to display the length of the string.
 
+To test the implementation, enter the `tests/` directory and run:
+
+```console
+make check
+```
+
+In case of a correct solution, you will get an output such as:
+
+```text
+./run_all_tests.sh
+test_reverse_simple              ........................ passed ...  33
+test_reverse_special             ........................ passed ...  33
+test_reverse_long                ........................ passed ...  34
+
+Total:                                                           100/100
+```
+
 If you're having trouble solving this exercise, go through [this](../../reading/functions.md) reading material.
