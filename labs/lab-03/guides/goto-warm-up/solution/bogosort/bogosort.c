@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+
 
 /* checks if the array is sorted */
 static int is_sorted(int a[], int n)
@@ -20,10 +22,11 @@ static void shuffle(int a[], int n)
 {
 	int i;
 	int t, r;
+	unsigned int seed = time(NULL);
 
 	for (i = 0; i < n; i++) {
 		t = a[i];
-		r = rand_r() % n;
+		r = rand_r(&seed) % n;
 		a[i] = a[r];
 		a[r] = t;
 	}
